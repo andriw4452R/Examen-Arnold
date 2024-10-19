@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000080; /* Azul normal */
+    color: #fff; /* Texto en blanco */
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 100%; /* Abarca todo el ancho de la página */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://padelathletes.com/wp-content/uploads/2023/10/padel-court-21.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.cursos, .testimonios, .contacto {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.cursos h2, .testimonios h2, .contacto h2 {
+    margin-bottom: 1rem; /* Espacio entre el título y la barra */
+    position: relative; /* Posición relativa para el pseudo-elemento */
+}
+
+.cursos h2::after, .testimonios h2::after, .contacto h2::after {
+    content: ""; /* Necesario para el pseudo-elemento */
+    display: block;
+    width: 100%; /* Ancho de la barra al 100% */
+    height: 4px; /* Altura de la barra */
+    background-color: #000080; /* Color azul */
+    position: absolute; /* Posiciona la barra respecto al título */
+    bottom: -4px; /* Ajusta la posición para que esté justo debajo del título */
+    left: 0; /* Alinea a la izquierda */
+}
+
+.curso {
+    border: 1px solid #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.curso span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.testimonio {
+    border-bottom: 1px solid #333;
+    padding: 1rem 0;
+}
+
+.testimonio h4 {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px; /* Limita el ancho del formulario */
+    margin: 0 auto; /* Centra el formulario */
+}
+
+.contacto textarea {
+    height: 100px; /* Fija una altura más razonable para el textarea */
+}
+
+.contacto input, .contacto textarea {
+    padding: 8px; /* Reduce el tamaño del padding */
+    margin-bottom: 0.8rem; /* Reduce el espacio entre los campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+}
+
+.contacto button {
+    padding: 8px 16px; /* Reduce el tamaño del botón */
+    background: #ff5733;
+    color: white;
+    border: none;
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente del botón */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contacto button:hover {
+    background: #ff4500; /* Color de fondo al pasar el ratón por el botón */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.footer-contacto {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.footer-legales {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.footer-legales a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-legales a:hover {
+    text-decoration: underline;
+}
